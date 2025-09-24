@@ -1,4 +1,5 @@
-![졸업과제 메인](https://github.com/user-attachments/assets/81cd6ef5-e50d-43e8-8151-e6451140a892)
+
+<img width="720" height="405" alt="졸업과제메인" src="https://github.com/user-attachments/assets/2038a387-4857-4045-8751-f9bcc98dbce7" />
 
 
 # 청각 제약 상황을 위한 실내 소리 인식 및 상황 감지 시스템
