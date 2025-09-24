@@ -1,0 +1,14 @@
+# Goal
+bool save_map
+string map_name
+---
+# Result
+bool success
+string map_path
+string message
+---
+# Feedback
+geometry_msgs/PoseStamped pose
+float32 progress
+float32 quality
+string status
