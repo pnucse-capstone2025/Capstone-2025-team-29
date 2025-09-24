@@ -1,0 +1,15 @@
+fastapi
+uvicorn
+sqlalchemy
+pymysql
+python-dotenv
+cryptography
+bcrypt
+requests
+google-auth==2.29.0
+google-auth-oauthlib==1.2.0
+google-auth-httplib2==0.2.0
+python-multipart
+uvicorn[standard]
+opencv-python-headless
+paho-mqtt>=2.1.0
