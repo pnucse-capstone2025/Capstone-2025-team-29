@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1, user-scalable=yes, viewport-fit=cover" />
+  <title>Camera</title>
+  <script src="https://unpkg.com/mqtt/dist/mqtt.min.js"></script>
+  <style>
+    html, body { margin:0; height:100%; background:#000; }
+    #v { width:100vw; height:100vh; object-fit:contain; display:block; touch-action:manipulation; }
+  </style>
+</head>
+<body>
+  <img id="v" alt="camera" />
+  <script>
+    const qs = new URLSearchParams(location.search);
+    const WS_URL = qs.get("ws")    || "ws://3.107.47.243:9001";
+    const TOPIC  = qs.get("topic") || "robot/cam/jpg";
+
+    const img = document.getElementById("v");
+    const client = mqtt.connect(WS_URL, { clientId: "viewer_"+Math.random().toString(16).slice(2) });
+
+    client.on("connect", () => client.subscribe(TOPIC));
+    client.on("message", (_t, payload) => {
+      // base64 JPEG 가정
+      const b64 = new TextDecoder().decode(payload);
+      img.src = "data:image/jpeg;base64," + b64;
+    });
+
+    let fit = "contain";
+    img.addEventListener("click", () => {
+      fit = (fit === "contain") ? "cover" : "contain";
+      img.style.objectFit = fit;
+    });
+  </script>
+</body>
+</html>
