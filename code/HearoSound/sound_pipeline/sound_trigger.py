@@ -2,8 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 Sound Trigger Module
-- 100dB 이상 소리 감지 시 1.024x4초 녹음
-- triggered_record.py 기반으로 구현
+- 70dB 이상 소리 감지 시 1.024x4초 녹음
 """
 
 import pyaudio
@@ -19,47 +18,26 @@ from typing import Optional, Tuple
 FORMAT = pyaudio.paInt16
 RATE = 16000
 CHUNK = 1024
-THRESHOLD_DB = 30  # 30dB 임계값 (테스트용)
+THRESHOLD_DB = 70  # 70dB 임계값
 RECORD_SECONDS = 1.024 * 4  # 1.024 x 4초 = 4.096초
 TARGET_DEVICE_KEYWORDS = ("ReSpeaker", "seeed", "SEEED")  # 장치명에 포함될 키워드
 
 class SoundTrigger:
     def __init__(self, output_dir: str = "recordings", led_controller=None):
-        """
-        Sound Trigger 초기화
         
-        Args:
-            output_dir: 녹음 파일 저장 디렉토리
-            led_controller: LED 컨트롤러 인스턴스 (wake up용)
-        """
         self.output_dir = output_dir
         self.led_controller = led_controller
         self.p = pyaudio.PyAudio()
         self.stream = None
         self.device_index = None
         self.max_in_ch = 0
-        self.desired_channels = 0
+        self.desired_channels = 3
         
-        # 동시 녹음 제한 (최대 2개)
+        # 동시 녹음 (최대 2개)
         self.active_recordings = 0
         self.max_concurrent_recordings = 2
-        self.recording_lock = threading.Lock()
-        
-        # 출력 디렉토리 생성
-        os.makedirs(output_dir, exist_ok=True)
-        
-        # 장치 초기화
-        self._initialize_device()
-        
-    def _initialize_device(self):
-        """ReSpeaker 장치 초기화"""
-        self.device_index, self.max_in_ch = self._find_respeaker_input_device()
-        
-        # ReSpeaker v2.0이면 6채널(0~3: 마이크, 4: reference, 5: post-processed)을 시도
-        # 안 되면 사용 가능한 최대 입력 채널로 열고, 최종적으로 1채널 변환 저장
-        self.desired_channels = 6 if self.max_in_ch >= 6 else self.max_in_ch if self.max_in_ch > 0 else 1
-        
-        
+        self.recording_l으로 고정
+        self.desired_channels = 3
         info = self.p.get_device_info_by_index(self.device_index)
         print(f"[Device] index={self.device_index}, name='{info.get('name')}', maxInputChannels={self.max_in_ch}")
         print(f"[Open] channels={self.desired_channels}, rate={RATE}")
@@ -99,7 +77,7 @@ class SoundTrigger:
         return device_index, max_in_ch
     
     def _to_mono_int16(self, interleaved: np.ndarray, num_channels: int) -> np.ndarray:
-        """멀티채널 int16 interleaved -> 모노 int16 (Channel 0만 사용)"""
+        
         if num_channels <= 1:
             return interleaved.astype(np.int16)
 
@@ -108,8 +86,6 @@ class SoundTrigger:
         if usable_len != len(interleaved):
             interleaved = interleaved[:usable_len]
         x = interleaved.reshape(-1, num_channels)
-
-        # Channel 0만 사용 (ReSpeaker USB Mic Array의 후처리된 오디오)
         mono = x[:, 0].astype(np.int16)
         
         return mono
@@ -147,15 +123,12 @@ class SoundTrigger:
             return -np.inf
 
     def _level_for_trigger(self, interleaved: np.ndarray, num_channels: int) -> float:
-        """트리거 판정 레벨(RMS 또는 abs max) - Channel 0만 사용"""
+       
         if num_channels <= 1:
             return float(np.max(np.abs(interleaved)))
         usable_len = (len(interleaved) // num_channels) * num_channels
-        x = interleaved[:usable_len].reshape(-1, num_channels)
-
-        # Channel 0만 사용 (ReSpeaker USB Mic Array의 후처리된 오디오)
+        x = interleaved[:usable_len].reshape(-1, num_channels)        
         ch = x[:, 0].astype(np.int16)
-
         return float(np.max(np.abs(ch)))
 
     def start_monitoring(self) -> Optional[str]:
@@ -278,3 +251,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
