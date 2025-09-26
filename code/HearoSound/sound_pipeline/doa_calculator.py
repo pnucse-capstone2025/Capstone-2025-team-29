@@ -2,7 +2,6 @@
 # -*- coding: utf-8 -*-
 """
 DOA (Direction of Arrival) Calculator Module
-- DOA.py 기반으로 구현
 - 실시간 각도 계산 기능
 """
 
@@ -181,3 +180,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
