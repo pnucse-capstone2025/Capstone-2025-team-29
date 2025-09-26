@@ -1,10 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Single Separator for Raspberry Pi 5
+Sound Separator for Raspberry Pi 5
 - Implement AST-based audio source separation pipeline in a single file
-- Use the same separation logic as separator.py
-- Optimized for Raspberry Pi 5
 - Sound type filtering when sending to backend (only send danger, help, warning)
 - Include LED control functionality
 """
@@ -79,7 +77,7 @@ class WienerConfig:
     SIGMOID_THRESHOLD = 0.6
     ANCHOR_BOOST = 1.5
 
-# 사운드 타입 분류
+# Sound type
 DANGER_IDS = {396, 397, 398, 399, 400, 426, 436}
 HELP_IDS = {23, 14, 354, 355, 356, 359}
 WARNING_IDS = {0, 288, 364, 388, 389, 390, 439, 391, 392, 393, 395, 440, 441, 443, 456, 469, 470, 478, 479}
@@ -172,9 +170,9 @@ class ASTProcessor:
     """AST model processing - Raspberry Pi 5 optimized"""
     
     def __init__(self, model_name: str = "MIT/ast-finetuned-audioset-10-10-0.4593"):
-        # CPU 강제 설정 (Raspberry Pi 5 최적화)
+        # CPU 강제 설정 (Raspberry Pi 5)
         self.device = torch.device("cpu")
-        torch.set_num_threads(2)  # Raspberry Pi 5에 적합한 스레드 수
+        torch.set_num_threads(2)  # Raspberry Pi 5
         print(f"Device: CPU (threads: 2) - Raspberry Pi 5 optimized")
         
         if not TRANSFORMERS_AVAILABLE:
@@ -200,7 +198,7 @@ class ASTProcessor:
                     output_hidden_states=True
                 )
             
-            # Raspberry Pi 5 최적화: 동적 양자화
+            # 양자화
             try:
                 self.model = torch.quantization.quantize_dynamic(
                     self.model, {torch.nn.Linear}, dtype=torch.qint8
@@ -219,18 +217,7 @@ class ASTProcessor:
     
     def process(self, audio: np.ndarray) -> Tuple[np.ndarray, Dict, np.ndarray]:
         """Process with 10.24 second padding"""
-        if not self.is_available:
-            # 모델이 없을 때 더미 데이터 반환
-            dummy_attention = np.ones((ASTConfig.FREQ_PATCHES, ASTConfig.TIME_PATCHES)) * 0.5
-            dummy_classification = {
-                'predicted_class': "Unknown",
-                'confidence': 0.0,
-                'top5_classes': ["Unknown"] * 5,
-                'top5_probs': [0.0] * 5
-            }
-            dummy_spectrogram = np.zeros((N_MELS, 1024))
-            return dummy_attention, dummy_classification, dummy_spectrogram
-        
+    
         # 패딩
         padded = np.pad(audio, (0, max(0, L_MODEL - len(audio))), mode='constant')[:L_MODEL]
         
@@ -240,7 +227,7 @@ class ASTProcessor:
         # 추론
         with torch.no_grad():
             outputs = self.model(**inputs)
-        
+            
         # 어텐션 추출
         if outputs.attentions:
             attention = outputs.attentions[-1].squeeze(0).mean(dim=0)
@@ -359,7 +346,7 @@ def find_attention_anchor(
             start_patch = int(anchor_start * num_time_patches / max_frames)
             end_patch = int(anchor_end * num_time_patches / max_frames)
             
-            # 이전 앵커 영역을 강하게 억제 (0.01배로 감소)
+            # 이전 앵커 영역을 억제 (0.01배)
             att_masked[:, max(0, start_patch):min(num_time_patches, end_patch)] *= 0.01
             print(f"    Suppressed anchor region: frames {anchor_start}-{anchor_end} (patches {start_patch}-{end_patch})")
     # 이전 패스의 상위 어텐션 영역 약화
@@ -413,16 +400,11 @@ def find_attention_anchor(
         if freq_idx <= 3:  # 저주파
             freq_weight = 1.2
         elif freq_idx >= 8:  # 고주파
-            freq_weight = 1.1
+            freq_weight = 1.2
         
         if is_duplicate_detected:
-            
             continuity_weight = 1.0 + (len(segment) / 10.0)
-            
-      
             attention_weight = 1.0 + segment_attention
-            
-            
             position_weight = 1.0
             if previous_anchors:
                 min_distance = float('inf')
@@ -432,8 +414,6 @@ def find_attention_anchor(
                     prev_center_patch = prev_center * num_time_patches / max_frames
                     distance = abs(segment_center - prev_center_patch)
                     min_distance = min(min_distance, distance)
-                
-               
                 position_weight = 1.0 + min(2.0, min_distance / 10.0)
             
             score = len(segment) * segment_attention * freq_weight * continuity_weight * attention_weight * position_weight
@@ -448,7 +428,7 @@ def find_attention_anchor(
             best_segment = segment
     
     if best_segment is None:
-        # 폴백: 최대 어텐션 위치
+        # 최대 어텐션 위치
         max_freq_idx, max_time_idx = np.unravel_index(np.argmax(att_masked), att_masked.shape)
         anchor_size = min(5, valid_patches // 8)
         start_patch = max(0, max_time_idx - anchor_size // 2)
@@ -679,7 +659,7 @@ def multi_pass_separation(
         previous_anchors = []
         
         if i >= 1 and len(previous_classifications) > 0:
-            # 이전 패스의 분류 결과들과 비교할 수 있도록 임시로 AST 처리
+            # 이전 패스의 분류 결과들과 비교 임시로 AST 처리
             temp_attention_matrix, temp_classification, _ = ast_processor.process(current_10sec)
             current_class = temp_classification['predicted_class']
             
@@ -836,7 +816,6 @@ def send_to_backend(sound_type: str, sound_detail: str, angle: int, decibel: flo
 
 # ==================== Main Separator Class ====================
 class SingleSeparator:
-    """Single audio source separator for Raspberry Pi 5""
     
     def __init__(self, model_name: str = "MIT/ast-finetuned-audioset-10-10-0.4593",
                  backend_url: str = "http://13.238.200.232:8000/sound-events/",
@@ -847,7 +826,7 @@ class SingleSeparator:
         Args:
             model_name: AST model name
             backend_url: Backend API URL
-            led_controller: LED controller (optional)
+            led_controller: LED controller
         """
         self.backend_url = backend_url
         self.led_controller = led_controller
@@ -1010,3 +989,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
