@@ -1,5 +1,3 @@
-
-
 import os
 import sys
 import time
@@ -12,7 +10,7 @@ from datetime import datetime, timedelta
 
 from sound_trigger import SoundTrigger
 from doa_calculator import create_doa_calculator
-from single_separator import create_single_separator
+from separator import create_single_separator
 from led_controller import create_led_controller
 
 
@@ -25,16 +23,10 @@ class SingleSoundPipeline:
         self.device = device
         self.backend_url = backend_url
         
-            # Create output directory
         os.makedirs(output_dir, exist_ok=True)
-        
-        # State management
         self.is_running = False
-        
-        # Set for preventing duplicate class transmission for each audio file independently
         self.current_sent_classes: Set[str] = set()
-        
-        # Statistics
+
         self.stats = {
             "total_detected": 0,
             "successful_separations": 0,
@@ -47,29 +39,24 @@ class SingleSoundPipeline:
         """Initialize components"""
         print("=== Single Thread Pipeline Initialization ===")
         
-        # Initialize Sound Trigger
         print("1. Initializing Sound Trigger...")
         self.sound_trigger = SoundTrigger(os.path.join(self.output_dir, "recordings"), None)
         
-        # Initialize DOA Calculator
         print("2. Initializing DOA Calculator...")
         self.doa_calculator = create_doa_calculator()
         
-        # Initialize LED Controller first (needed for Sound Separator)
         print("3. Initializing LED Controller...")
         self.led_controller = create_led_controller()
         if self.led_controller is None:
             print("⚠️ LED Controller not available - LED control disabled")
         
-        # Initialize Sound Separator with LED Controller
         print("4. Initializing Single Separator...")
         self.sound_separator = create_single_separator(
             model_name=self.model_name, 
             backend_url=self.backend_url, 
-            led_controller=self.led_controller  # LED 컨트롤러 주입
+            led_controller=self.led_controller  
         )
         
-        # 모델 초기화 상태 확인
         if hasattr(self.sound_separator, 'ast_processor') and hasattr(self.sound_separator.ast_processor, 'is_available'):
             if self.sound_separator.ast_processor.is_available:
                 print("✅ Single Separator initialized successfully")
@@ -84,17 +71,13 @@ class SingleSoundPipeline:
         """Main loop - sequential processing from sound detection to separation"""
         while self.is_running:
             try:
-                # 1. 소리 감지 및 녹음
                 recorded_file = self.sound_trigger.start_monitoring()
                 
                 if recorded_file and self.is_running:
                     self.stats["total_detected"] += 1
                     print(f"\n🎵 Processing: {os.path.basename(recorded_file)}")
                     
-                    # Record recording completion time
                     recording_end_time = datetime.utcnow()
-                    
-                    # 2. Audio source separation and backend transmission
                     separation_result = self._process_separation(recorded_file, recording_end_time)
                     
                     if separation_result["success"]:
@@ -118,7 +101,7 @@ class SingleSoundPipeline:
             
             print(f"📍 Direction: {angle}°")
             
-            # 2. Perform audio source separation (using single_separator)
+            # 2. Perform audio source separation (using separator)
             print("🔍 Starting source separation...")
             
             # Initialize duplicate class set for current audio file
@@ -285,3 +268,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
