@@ -1,4 +1,4 @@
-# 🎵 FSD50K 음원 분리 성능 평가 결과
+#  FSD50K 음원 분리 성능 평가 
 
 ## 📊 전체 성능 요약
 
@@ -64,3 +64,4 @@
 - [FSD50K 데이터셋](https://zenodo.org/record/4060432)
 - [AST 모델](https://github.com/YuanGongND/ast)
 - [평가 코드](./class_eval.py)
+
