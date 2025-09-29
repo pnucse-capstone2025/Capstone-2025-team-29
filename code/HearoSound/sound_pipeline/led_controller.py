@@ -15,7 +15,7 @@ import os
 from typing import Optional, Dict, Any
 
 # usb_pixel_ring_v2.py 직접 import를 위한 경로 설정
-sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'source_separation', 'pixel_ring', 'pixel_ring'))
+sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'mic_array', 'pixel_ring', 'pixel_ring'))
 
 try:
     from usb_pixel_ring_v2 import PixelRing, find
@@ -622,3 +622,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
