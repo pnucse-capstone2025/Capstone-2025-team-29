@@ -13,7 +13,7 @@ from typing import Optional, Tuple
 import os
 
 # DOA.py에서 사용하는 tuning 모듈 import를 위한 경로 설정
-sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'source_separation', 'usb_4_mic_array'))
+sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'micarray', 'usb_4_mic_array'))
 
 try:
     from tuning import Tuning
@@ -180,4 +180,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
