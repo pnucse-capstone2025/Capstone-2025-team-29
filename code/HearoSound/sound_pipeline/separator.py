@@ -322,7 +322,7 @@ def find_attention_anchor(
     attention_matrix: np.ndarray,
     suppressed_regions: List[Tuple[int, int]],
     previous_peaks: List[Tuple[int, int]],
-    audio_length: int
+    audio_length: int,
     is_duplicate_detected: bool = False,
     previous_anchors: List[Tuple[int, int]] = None
 
@@ -989,4 +989,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
