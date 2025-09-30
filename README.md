@@ -226,6 +226,42 @@ docker-compose up --build
 - MySQL 컨테이너: 내부 포트 db:3306
 - 로컬에서 API 문서 테스트 - Swagger UI: http://localhost:8000/docs
 
+### 5.2.3. 음원분리
+#### 1. USB 라이브러리 설치
+```bash
+sudo pip install pyusb click
+```
+#### 2. 가상환경 생성
+```bash
+python -m venv venv
+
+# 가상환경 활성화
+source venv/bin/activate
+```
+#### 3. 의존성 설치
+```bash
+# pip 업그레이드
+pip install --upgrade pip
+
+# 오디오 처리 라이브러리
+pip install pyaudio librosa soundfile scipy numpy
+
+# AI/ML 라이브러리
+pip install transformers 
+```
+#### 4. 하드웨어 설정
+### USB 권한 설정
+```bash
+# 사용자를 audio 및 plugdev 그룹에 추가
+sudo usermod -a -G audio,plugdev $USER
+```
+#### 5. pipeline.py 실행
+```bash
+cd ~/Capstone-2025-team-29/code/HearoSound
+python pipeline.py
+```
+
+
 ### 6. 소개 자료 및 시연 영상
 #### 6.1. 프로젝트 소개 자료
 
