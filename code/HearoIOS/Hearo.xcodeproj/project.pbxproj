@@ -1,0 +1,1376 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2BB7D1112E65B7B90060B6CC /* FirebaseAI in Frameworks */ = {isa = PBXBuildFile; productRef = 2BB7D1102E65B7B90060B6CC /* FirebaseAI */; };
+		2BB7D1132E65B7B90060B6CC /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 2BB7D1122E65B7B90060B6CC /* FirebaseAnalytics */; };
+		2BB7D1152E65B7B90060B6CC /* FirebaseAnalyticsCore in Frameworks */ = {isa = PBXBuildFile; productRef = 2BB7D1142E65B7B90060B6CC /* FirebaseAnalyticsCore */; };
+		2BB7D1172E65B7B90060B6CC /* FirebaseAnalyticsIdentitySupport in Frameworks */ = {isa = PBXBuildFile; productRef = 2BB7D1162E65B7B90060B6CC /* FirebaseAnalyticsIdentitySupport */; };
+		2BB7D1192E65B7B90060B6CC /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = 2BB7D1182E65B7B90060B6CC /* FirebaseAppCheck */; };
+		2BB7D1212E65BF3E0060B6CC /* FirebaseInAppMessaging-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 2BB7D1202E65BF3E0060B6CC /* FirebaseInAppMessaging-Beta */; };
+		2BB7D1232E65BF3E0060B6CC /* FirebaseInstallations in Frameworks */ = {isa = PBXBuildFile; productRef = 2BB7D1222E65BF3E0060B6CC /* FirebaseInstallations */; };
+		2BB7D1252E65BF3E0060B6CC /* FirebaseMLModelDownloader in Frameworks */ = {isa = PBXBuildFile; productRef = 2BB7D1242E65BF3E0060B6CC /* FirebaseMLModelDownloader */; };
+		2BB7D1272E65BF3E0060B6CC /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 2BB7D1262E65BF3E0060B6CC /* FirebaseMessaging */; };
+		2BB7D1292E65BF7A0060B6CC /* FirebaseAppDistribution-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 2BB7D1282E65BF7A0060B6CC /* FirebaseAppDistribution-Beta */; };
+		2BB7D12B2E65BF7A0060B6CC /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 2BB7D12A2E65BF7A0060B6CC /* FirebaseAuth */; };
+		2BB7D12D2E65BF7A0060B6CC /* FirebaseAuthCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 2BB7D12C2E65BF7A0060B6CC /* FirebaseAuthCombine-Community */; };
+		2BB7D12F2E65BF7A0060B6CC /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 2BB7D12E2E65BF7A0060B6CC /* FirebaseCore */; };
+		2BB7D1312E65BF7A0060B6CC /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 2BB7D1302E65BF7A0060B6CC /* FirebaseCrashlytics */; };
+		2BB7D1332E65BF7A0060B6CC /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 2BB7D1322E65BF7A0060B6CC /* FirebaseDatabase */; };
+		2BB7D1352E65BF7A0060B6CC /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 2BB7D1342E65BF7A0060B6CC /* FirebaseFirestore */; };
+		2BB7D1372E65BF7A0060B6CC /* FirebaseFirestoreCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 2BB7D1362E65BF7A0060B6CC /* FirebaseFirestoreCombine-Community */; };
+		2BB7D1392E65BF7A0060B6CC /* FirebaseFunctions in Frameworks */ = {isa = PBXBuildFile; productRef = 2BB7D1382E65BF7A0060B6CC /* FirebaseFunctions */; };
+		2BB7D13B2E65BF7A0060B6CC /* FirebaseFunctionsCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 2BB7D13A2E65BF7A0060B6CC /* FirebaseFunctionsCombine-Community */; };
+		2BB7D13D2E65BF7A0060B6CC /* FirebasePerformance in Frameworks */ = {isa = PBXBuildFile; productRef = 2BB7D13C2E65BF7A0060B6CC /* FirebasePerformance */; };
+		2BB7D13F2E65BF7A0060B6CC /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = 2BB7D13E2E65BF7A0060B6CC /* FirebaseRemoteConfig */; };
+		2BB7D1412E65BF7A0060B6CC /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 2BB7D1402E65BF7A0060B6CC /* FirebaseStorage */; };
+		2BB7D1432E65BF7A0060B6CC /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 2BB7D1422E65BF7A0060B6CC /* FirebaseStorageCombine-Community */; };
+		2BB7D1E82E69E5B60060B6CC /* HearoWatch Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 2BB7D1C82E69E5B50060B6CC /* HearoWatch Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2BB7D1FD2E6B21570060B6CC /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BB7D1FC2E6B21570060B6CC /* UserNotifications.framework */; };
+		2BB7D1FF2E6B21570060B6CC /* UserNotificationsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BB7D1FE2E6B21570060B6CC /* UserNotificationsUI.framework */; };
+		2BB7D2092E6B21570060B6CC /* HearoAlert.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 2BB7D1FA2E6B21570060B6CC /* HearoAlert.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2BF3011F2E6DBAD3000517C6 /* CocoaMQTT in Frameworks */ = {isa = PBXBuildFile; productRef = 2BF3011E2E6DBAD3000517C6 /* CocoaMQTT */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2BB7D0C32E6584C10060B6CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2BB7D0AC2E6584C00060B6CC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2BB7D0B32E6584C00060B6CC;
+			remoteInfo = Hearo;
+		};
+		2BB7D0CD2E6584C10060B6CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2BB7D0AC2E6584C00060B6CC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2BB7D0B32E6584C00060B6CC;
+			remoteInfo = Hearo;
+		};
+		2BB7D1D52E69E5B60060B6CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2BB7D0AC2E6584C00060B6CC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2BB7D1C72E69E5B50060B6CC;
+			remoteInfo = "HearoWatch Watch App";
+		};
+		2BB7D1DF2E69E5B60060B6CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2BB7D0AC2E6584C00060B6CC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2BB7D1C72E69E5B50060B6CC;
+			remoteInfo = "HearoWatch Watch App";
+		};
+		2BB7D1E62E69E5B60060B6CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2BB7D0AC2E6584C00060B6CC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2BB7D1C72E69E5B50060B6CC;
+			remoteInfo = "HearoWatch Watch App";
+		};
+		2BB7D2072E6B21570060B6CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2BB7D0AC2E6584C00060B6CC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2BB7D1F92E6B21570060B6CC;
+			remoteInfo = HearoAlert;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2BB7D1EC2E69E5B60060B6CC /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				2BB7D1E82E69E5B60060B6CC /* HearoWatch Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BB7D20E2E6B21570060B6CC /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				2BB7D2092E6B21570060B6CC /* HearoAlert.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2BB7D0B42E6584C00060B6CC /* Hearo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hearo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BB7D0C22E6584C10060B6CC /* HearoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HearoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BB7D0CC2E6584C10060B6CC /* HearoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HearoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BB7D1C82E69E5B50060B6CC /* HearoWatch Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HearoWatch Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BB7D1D42E69E5B60060B6CC /* HearoWatch Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "HearoWatch Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BB7D1DE2E69E5B60060B6CC /* HearoWatch Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "HearoWatch Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BB7D1FA2E6B21570060B6CC /* HearoAlert.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = HearoAlert.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BB7D1FC2E6B21570060B6CC /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		2BB7D1FE2E6B21570060B6CC /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		2BB7D0B62E6584C00060B6CC /* Hearo */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Hearo;
+			sourceTree = "<group>";
+		};
+		2BB7D0C52E6584C10060B6CC /* HearoTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = HearoTests;
+			sourceTree = "<group>";
+		};
+		2BB7D0CF2E6584C10060B6CC /* HearoUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = HearoUITests;
+			sourceTree = "<group>";
+		};
+		2BB7D1C92E69E5B50060B6CC /* HearoWatch Watch App */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "HearoWatch Watch App";
+			sourceTree = "<group>";
+		};
+		2BB7D1D72E69E5B60060B6CC /* HearoWatch Watch AppTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "HearoWatch Watch AppTests";
+			sourceTree = "<group>";
+		};
+		2BB7D1E12E69E5B60060B6CC /* HearoWatch Watch AppUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "HearoWatch Watch AppUITests";
+			sourceTree = "<group>";
+		};
+		2BB7D2002E6B21570060B6CC /* HearoAlert */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = HearoAlert;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2BB7D0B12E6584C00060B6CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BB7D1332E65BF7A0060B6CC /* FirebaseDatabase in Frameworks */,
+				2BB7D1272E65BF3E0060B6CC /* FirebaseMessaging in Frameworks */,
+				2BB7D13D2E65BF7A0060B6CC /* FirebasePerformance in Frameworks */,
+				2BB7D1432E65BF7A0060B6CC /* FirebaseStorageCombine-Community in Frameworks */,
+				2BF3011F2E6DBAD3000517C6 /* CocoaMQTT in Frameworks */,
+				2BB7D13F2E65BF7A0060B6CC /* FirebaseRemoteConfig in Frameworks */,
+				2BB7D1172E65B7B90060B6CC /* FirebaseAnalyticsIdentitySupport in Frameworks */,
+				2BB7D1392E65BF7A0060B6CC /* FirebaseFunctions in Frameworks */,
+				2BB7D1232E65BF3E0060B6CC /* FirebaseInstallations in Frameworks */,
+				2BB7D1312E65BF7A0060B6CC /* FirebaseCrashlytics in Frameworks */,
+				2BB7D1352E65BF7A0060B6CC /* FirebaseFirestore in Frameworks */,
+				2BB7D1132E65B7B90060B6CC /* FirebaseAnalytics in Frameworks */,
+				2BB7D1252E65BF3E0060B6CC /* FirebaseMLModelDownloader in Frameworks */,
+				2BB7D1152E65B7B90060B6CC /* FirebaseAnalyticsCore in Frameworks */,
+				2BB7D1192E65B7B90060B6CC /* FirebaseAppCheck in Frameworks */,
+				2BB7D13B2E65BF7A0060B6CC /* FirebaseFunctionsCombine-Community in Frameworks */,
+				2BB7D12D2E65BF7A0060B6CC /* FirebaseAuthCombine-Community in Frameworks */,
+				2BB7D1372E65BF7A0060B6CC /* FirebaseFirestoreCombine-Community in Frameworks */,
+				2BB7D12F2E65BF7A0060B6CC /* FirebaseCore in Frameworks */,
+				2BB7D12B2E65BF7A0060B6CC /* FirebaseAuth in Frameworks */,
+				2BB7D1292E65BF7A0060B6CC /* FirebaseAppDistribution-Beta in Frameworks */,
+				2BB7D1412E65BF7A0060B6CC /* FirebaseStorage in Frameworks */,
+				2BB7D1112E65B7B90060B6CC /* FirebaseAI in Frameworks */,
+				2BB7D1212E65BF3E0060B6CC /* FirebaseInAppMessaging-Beta in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BB7D0BF2E6584C10060B6CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BB7D0C92E6584C10060B6CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BB7D1C52E69E5B50060B6CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BB7D1D12E69E5B60060B6CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BB7D1DB2E69E5B60060B6CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BB7D1F72E6B21570060B6CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BB7D1FF2E6B21570060B6CC /* UserNotificationsUI.framework in Frameworks */,
+				2BB7D1FD2E6B21570060B6CC /* UserNotifications.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2BB7D0AB2E6584C00060B6CC = {
+			isa = PBXGroup;
+			children = (
+				2BB7D0B62E6584C00060B6CC /* Hearo */,
+				2BB7D0C52E6584C10060B6CC /* HearoTests */,
+				2BB7D0CF2E6584C10060B6CC /* HearoUITests */,
+				2BB7D1C92E69E5B50060B6CC /* HearoWatch Watch App */,
+				2BB7D1D72E69E5B60060B6CC /* HearoWatch Watch AppTests */,
+				2BB7D1E12E69E5B60060B6CC /* HearoWatch Watch AppUITests */,
+				2BB7D2002E6B21570060B6CC /* HearoAlert */,
+				2BB7D1FB2E6B21570060B6CC /* Frameworks */,
+				2BB7D0B52E6584C00060B6CC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2BB7D0B52E6584C00060B6CC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2BB7D0B42E6584C00060B6CC /* Hearo.app */,
+				2BB7D0C22E6584C10060B6CC /* HearoTests.xctest */,
+				2BB7D0CC2E6584C10060B6CC /* HearoUITests.xctest */,
+				2BB7D1C82E69E5B50060B6CC /* HearoWatch Watch App.app */,
+				2BB7D1D42E69E5B60060B6CC /* HearoWatch Watch AppTests.xctest */,
+				2BB7D1DE2E69E5B60060B6CC /* HearoWatch Watch AppUITests.xctest */,
+				2BB7D1FA2E6B21570060B6CC /* HearoAlert.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2BB7D1FB2E6B21570060B6CC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2BB7D1FC2E6B21570060B6CC /* UserNotifications.framework */,
+				2BB7D1FE2E6B21570060B6CC /* UserNotificationsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2BB7D0B32E6584C00060B6CC /* Hearo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2BB7D0D62E6584C10060B6CC /* Build configuration list for PBXNativeTarget "Hearo" */;
+			buildPhases = (
+				2BB7D0B02E6584C00060B6CC /* Sources */,
+				2BB7D0B12E6584C00060B6CC /* Frameworks */,
+				2BB7D0B22E6584C00060B6CC /* Resources */,
+				2BB7D1EC2E69E5B60060B6CC /* Embed Watch Content */,
+				2BB7D20E2E6B21570060B6CC /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2BB7D1E72E69E5B60060B6CC /* PBXTargetDependency */,
+				2BB7D2082E6B21570060B6CC /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				2BB7D0B62E6584C00060B6CC /* Hearo */,
+			);
+			name = Hearo;
+			packageProductDependencies = (
+				2BB7D1102E65B7B90060B6CC /* FirebaseAI */,
+				2BB7D1122E65B7B90060B6CC /* FirebaseAnalytics */,
+				2BB7D1142E65B7B90060B6CC /* FirebaseAnalyticsCore */,
+				2BB7D1162E65B7B90060B6CC /* FirebaseAnalyticsIdentitySupport */,
+				2BB7D1182E65B7B90060B6CC /* FirebaseAppCheck */,
+				2BB7D1202E65BF3E0060B6CC /* FirebaseInAppMessaging-Beta */,
+				2BB7D1222E65BF3E0060B6CC /* FirebaseInstallations */,
+				2BB7D1242E65BF3E0060B6CC /* FirebaseMLModelDownloader */,
+				2BB7D1262E65BF3E0060B6CC /* FirebaseMessaging */,
+				2BB7D1282E65BF7A0060B6CC /* FirebaseAppDistribution-Beta */,
+				2BB7D12A2E65BF7A0060B6CC /* FirebaseAuth */,
+				2BB7D12C2E65BF7A0060B6CC /* FirebaseAuthCombine-Community */,
+				2BB7D12E2E65BF7A0060B6CC /* FirebaseCore */,
+				2BB7D1302E65BF7A0060B6CC /* FirebaseCrashlytics */,
+				2BB7D1322E65BF7A0060B6CC /* FirebaseDatabase */,
+				2BB7D1342E65BF7A0060B6CC /* FirebaseFirestore */,
+				2BB7D1362E65BF7A0060B6CC /* FirebaseFirestoreCombine-Community */,
+				2BB7D1382E65BF7A0060B6CC /* FirebaseFunctions */,
+				2BB7D13A2E65BF7A0060B6CC /* FirebaseFunctionsCombine-Community */,
+				2BB7D13C2E65BF7A0060B6CC /* FirebasePerformance */,
+				2BB7D13E2E65BF7A0060B6CC /* FirebaseRemoteConfig */,
+				2BB7D1402E65BF7A0060B6CC /* FirebaseStorage */,
+				2BB7D1422E65BF7A0060B6CC /* FirebaseStorageCombine-Community */,
+				2BF3011E2E6DBAD3000517C6 /* CocoaMQTT */,
+			);
+			productName = Hearo;
+			productReference = 2BB7D0B42E6584C00060B6CC /* Hearo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2BB7D0C12E6584C10060B6CC /* HearoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2BB7D0D92E6584C10060B6CC /* Build configuration list for PBXNativeTarget "HearoTests" */;
+			buildPhases = (
+				2BB7D0BE2E6584C10060B6CC /* Sources */,
+				2BB7D0BF2E6584C10060B6CC /* Frameworks */,
+				2BB7D0C02E6584C10060B6CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2BB7D0C42E6584C10060B6CC /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				2BB7D0C52E6584C10060B6CC /* HearoTests */,
+			);
+			name = HearoTests;
+			packageProductDependencies = (
+			);
+			productName = HearoTests;
+			productReference = 2BB7D0C22E6584C10060B6CC /* HearoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2BB7D0CB2E6584C10060B6CC /* HearoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2BB7D0DC2E6584C10060B6CC /* Build configuration list for PBXNativeTarget "HearoUITests" */;
+			buildPhases = (
+				2BB7D0C82E6584C10060B6CC /* Sources */,
+				2BB7D0C92E6584C10060B6CC /* Frameworks */,
+				2BB7D0CA2E6584C10060B6CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2BB7D0CE2E6584C10060B6CC /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				2BB7D0CF2E6584C10060B6CC /* HearoUITests */,
+			);
+			name = HearoUITests;
+			packageProductDependencies = (
+			);
+			productName = HearoUITests;
+			productReference = 2BB7D0CC2E6584C10060B6CC /* HearoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		2BB7D1C72E69E5B50060B6CC /* HearoWatch Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2BB7D1E92E69E5B60060B6CC /* Build configuration list for PBXNativeTarget "HearoWatch Watch App" */;
+			buildPhases = (
+				2BB7D1C42E69E5B50060B6CC /* Sources */,
+				2BB7D1C52E69E5B50060B6CC /* Frameworks */,
+				2BB7D1C62E69E5B50060B6CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				2BB7D1C92E69E5B50060B6CC /* HearoWatch Watch App */,
+			);
+			name = "HearoWatch Watch App";
+			packageProductDependencies = (
+			);
+			productName = "HearoWatch Watch App";
+			productReference = 2BB7D1C82E69E5B50060B6CC /* HearoWatch Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2BB7D1D32E69E5B60060B6CC /* HearoWatch Watch AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2BB7D1ED2E69E5B60060B6CC /* Build configuration list for PBXNativeTarget "HearoWatch Watch AppTests" */;
+			buildPhases = (
+				2BB7D1D02E69E5B60060B6CC /* Sources */,
+				2BB7D1D12E69E5B60060B6CC /* Frameworks */,
+				2BB7D1D22E69E5B60060B6CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2BB7D1D62E69E5B60060B6CC /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				2BB7D1D72E69E5B60060B6CC /* HearoWatch Watch AppTests */,
+			);
+			name = "HearoWatch Watch AppTests";
+			packageProductDependencies = (
+			);
+			productName = "HearoWatch Watch AppTests";
+			productReference = 2BB7D1D42E69E5B60060B6CC /* HearoWatch Watch AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2BB7D1DD2E69E5B60060B6CC /* HearoWatch Watch AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2BB7D1F02E69E5B60060B6CC /* Build configuration list for PBXNativeTarget "HearoWatch Watch AppUITests" */;
+			buildPhases = (
+				2BB7D1DA2E69E5B60060B6CC /* Sources */,
+				2BB7D1DB2E69E5B60060B6CC /* Frameworks */,
+				2BB7D1DC2E69E5B60060B6CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2BB7D1E02E69E5B60060B6CC /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				2BB7D1E12E69E5B60060B6CC /* HearoWatch Watch AppUITests */,
+			);
+			name = "HearoWatch Watch AppUITests";
+			packageProductDependencies = (
+			);
+			productName = "HearoWatch Watch AppUITests";
+			productReference = 2BB7D1DE2E69E5B60060B6CC /* HearoWatch Watch AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		2BB7D1F92E6B21570060B6CC /* HearoAlert */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2BB7D20A2E6B21570060B6CC /* Build configuration list for PBXNativeTarget "HearoAlert" */;
+			buildPhases = (
+				2BB7D1F62E6B21570060B6CC /* Sources */,
+				2BB7D1F72E6B21570060B6CC /* Frameworks */,
+				2BB7D1F82E6B21570060B6CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				2BB7D2002E6B21570060B6CC /* HearoAlert */,
+			);
+			name = HearoAlert;
+			packageProductDependencies = (
+			);
+			productName = HearoAlert;
+			productReference = 2BB7D1FA2E6B21570060B6CC /* HearoAlert.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2BB7D0AC2E6584C00060B6CC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1640;
+				LastUpgradeCheck = 1640;
+				TargetAttributes = {
+					2BB7D0B32E6584C00060B6CC = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					2BB7D0C12E6584C10060B6CC = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = 2BB7D0B32E6584C00060B6CC;
+					};
+					2BB7D0CB2E6584C10060B6CC = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = 2BB7D0B32E6584C00060B6CC;
+					};
+					2BB7D1C72E69E5B50060B6CC = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					2BB7D1D32E69E5B60060B6CC = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = 2BB7D1C72E69E5B50060B6CC;
+					};
+					2BB7D1DD2E69E5B60060B6CC = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = 2BB7D1C72E69E5B50060B6CC;
+					};
+					2BB7D1F92E6B21570060B6CC = {
+						CreatedOnToolsVersion = 16.4;
+					};
+				};
+			};
+			buildConfigurationList = 2BB7D0AF2E6584C00060B6CC /* Build configuration list for PBXProject "Hearo" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2BB7D0AB2E6584C00060B6CC;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				2BB7D10F2E65B7B90060B6CC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				2BF3011D2E6DBAD3000517C6 /* XCRemoteSwiftPackageReference "CocoaMQTT" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 2BB7D0B52E6584C00060B6CC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2BB7D0B32E6584C00060B6CC /* Hearo */,
+				2BB7D0C12E6584C10060B6CC /* HearoTests */,
+				2BB7D0CB2E6584C10060B6CC /* HearoUITests */,
+				2BB7D1C72E69E5B50060B6CC /* HearoWatch Watch App */,
+				2BB7D1D32E69E5B60060B6CC /* HearoWatch Watch AppTests */,
+				2BB7D1DD2E69E5B60060B6CC /* HearoWatch Watch AppUITests */,
+				2BB7D1F92E6B21570060B6CC /* HearoAlert */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2BB7D0B22E6584C00060B6CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BB7D0C02E6584C10060B6CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BB7D0CA2E6584C10060B6CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BB7D1C62E69E5B50060B6CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BB7D1D22E69E5B60060B6CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BB7D1DC2E69E5B60060B6CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BB7D1F82E6B21570060B6CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2BB7D0B02E6584C00060B6CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BB7D0BE2E6584C10060B6CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BB7D0C82E6584C10060B6CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BB7D1C42E69E5B50060B6CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BB7D1D02E69E5B60060B6CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BB7D1DA2E69E5B60060B6CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BB7D1F62E6B21570060B6CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2BB7D0C42E6584C10060B6CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2BB7D0B32E6584C00060B6CC /* Hearo */;
+			targetProxy = 2BB7D0C32E6584C10060B6CC /* PBXContainerItemProxy */;
+		};
+		2BB7D0CE2E6584C10060B6CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2BB7D0B32E6584C00060B6CC /* Hearo */;
+			targetProxy = 2BB7D0CD2E6584C10060B6CC /* PBXContainerItemProxy */;
+		};
+		2BB7D1D62E69E5B60060B6CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2BB7D1C72E69E5B50060B6CC /* HearoWatch Watch App */;
+			targetProxy = 2BB7D1D52E69E5B60060B6CC /* PBXContainerItemProxy */;
+		};
+		2BB7D1E02E69E5B60060B6CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2BB7D1C72E69E5B50060B6CC /* HearoWatch Watch App */;
+			targetProxy = 2BB7D1DF2E69E5B60060B6CC /* PBXContainerItemProxy */;
+		};
+		2BB7D1E72E69E5B60060B6CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2BB7D1C72E69E5B50060B6CC /* HearoWatch Watch App */;
+			targetProxy = 2BB7D1E62E69E5B60060B6CC /* PBXContainerItemProxy */;
+		};
+		2BB7D2082E6B21570060B6CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2BB7D1F92E6B21570060B6CC /* HearoAlert */;
+			targetProxy = 2BB7D2072E6B21570060B6CC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2BB7D0D42E6584C10060B6CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 43J3NK7VXN;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2BB7D0D52E6584C10060B6CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 43J3NK7VXN;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		2BB7D0D72E6584C10060B6CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Hearo/Hearo.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = 2WABK8SW3Y;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Hearo/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "와이파이 정보를 확인하기 위해 위치 권한이 필요합니다.";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pnu.HearoApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				XROS_DEPLOYMENT_TARGET = 2.5;
+			};
+			name = Debug;
+		};
+		2BB7D0D82E6584C10060B6CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Hearo/Hearo.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = 2WABK8SW3Y;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Hearo/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "와이파이 정보를 확인하기 위해 위치 권한이 필요합니다.";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pnu.HearoApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				XROS_DEPLOYMENT_TARGET = 2.5;
+			};
+			name = Release;
+		};
+		2BB7D0DA2E6584C10060B6CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 43J3NK7VXN;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pnu.HearoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hearo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Hearo";
+				XROS_DEPLOYMENT_TARGET = 2.5;
+			};
+			name = Debug;
+		};
+		2BB7D0DB2E6584C10060B6CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 43J3NK7VXN;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pnu.HearoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hearo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Hearo";
+				XROS_DEPLOYMENT_TARGET = 2.5;
+			};
+			name = Release;
+		};
+		2BB7D0DD2E6584C10060B6CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 43J3NK7VXN;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pnu.HearoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TEST_TARGET_NAME = Hearo;
+				XROS_DEPLOYMENT_TARGET = 2.5;
+			};
+			name = Debug;
+		};
+		2BB7D0DE2E6584C10060B6CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 43J3NK7VXN;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pnu.HearoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TEST_TARGET_NAME = Hearo;
+				XROS_DEPLOYMENT_TARGET = 2.5;
+			};
+			name = Release;
+		};
+		2BB7D1EA2E69E5B60060B6CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2WABK8SW3Y;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = HearoWatch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = pnu.HearoApp;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pnu.HearoApp.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.6;
+			};
+			name = Debug;
+		};
+		2BB7D1EB2E69E5B60060B6CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2WABK8SW3Y;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = HearoWatch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = pnu.HearoApp;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pnu.HearoApp.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 10.6;
+			};
+			name = Release;
+		};
+		2BB7D1EE2E69E5B60060B6CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 43J3NK7VXN;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "pnu.HearoWatch-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HearoWatch Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/HearoWatch Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 10.6;
+			};
+			name = Debug;
+		};
+		2BB7D1EF2E69E5B60060B6CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 43J3NK7VXN;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "pnu.HearoWatch-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HearoWatch Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/HearoWatch Watch App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 10.6;
+			};
+			name = Release;
+		};
+		2BB7D1F12E69E5B60060B6CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 43J3NK7VXN;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "pnu.HearoWatch-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "HearoWatch Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 10.6;
+			};
+			name = Debug;
+		};
+		2BB7D1F22E69E5B60060B6CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 43J3NK7VXN;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "pnu.HearoWatch-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "HearoWatch Watch App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 10.6;
+			};
+			name = Release;
+		};
+		2BB7D20B2E6B21570060B6CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2WABK8SW3Y;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HearoAlert/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = HearoAlert;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pnu.HearoApp.HearoAlert;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2BB7D20C2E6B21570060B6CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2WABK8SW3Y;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HearoAlert/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = HearoAlert;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pnu.HearoApp.HearoAlert;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2BB7D0AF2E6584C00060B6CC /* Build configuration list for PBXProject "Hearo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BB7D0D42E6584C10060B6CC /* Debug */,
+				2BB7D0D52E6584C10060B6CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2BB7D0D62E6584C10060B6CC /* Build configuration list for PBXNativeTarget "Hearo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BB7D0D72E6584C10060B6CC /* Debug */,
+				2BB7D0D82E6584C10060B6CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2BB7D0D92E6584C10060B6CC /* Build configuration list for PBXNativeTarget "HearoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BB7D0DA2E6584C10060B6CC /* Debug */,
+				2BB7D0DB2E6584C10060B6CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2BB7D0DC2E6584C10060B6CC /* Build configuration list for PBXNativeTarget "HearoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BB7D0DD2E6584C10060B6CC /* Debug */,
+				2BB7D0DE2E6584C10060B6CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2BB7D1E92E69E5B60060B6CC /* Build configuration list for PBXNativeTarget "HearoWatch Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BB7D1EA2E69E5B60060B6CC /* Debug */,
+				2BB7D1EB2E69E5B60060B6CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2BB7D1ED2E69E5B60060B6CC /* Build configuration list for PBXNativeTarget "HearoWatch Watch AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BB7D1EE2E69E5B60060B6CC /* Debug */,
+				2BB7D1EF2E69E5B60060B6CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2BB7D1F02E69E5B60060B6CC /* Build configuration list for PBXNativeTarget "HearoWatch Watch AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BB7D1F12E69E5B60060B6CC /* Debug */,
+				2BB7D1F22E69E5B60060B6CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2BB7D20A2E6B21570060B6CC /* Build configuration list for PBXNativeTarget "HearoAlert" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BB7D20B2E6B21570060B6CC /* Debug */,
+				2BB7D20C2E6B21570060B6CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2BB7D10F2E65B7B90060B6CC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.2.0;
+			};
+		};
+		2BF3011D2E6DBAD3000517C6 /* XCRemoteSwiftPackageReference "CocoaMQTT" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/emqx/CocoaMQTT";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.1.9;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2BB7D1102E65B7B90060B6CC /* FirebaseAI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2BB7D10F2E65B7B90060B6CC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAI;
+		};
+		2BB7D1122E65B7B90060B6CC /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2BB7D10F2E65B7B90060B6CC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		2BB7D1142E65B7B90060B6CC /* FirebaseAnalyticsCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2BB7D10F2E65B7B90060B6CC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsCore;
+		};
+		2BB7D1162E65B7B90060B6CC /* FirebaseAnalyticsIdentitySupport */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2BB7D10F2E65B7B90060B6CC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsIdentitySupport;
+		};
+		2BB7D1182E65B7B90060B6CC /* FirebaseAppCheck */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2BB7D10F2E65B7B90060B6CC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAppCheck;
+		};
+		2BB7D1202E65BF3E0060B6CC /* FirebaseInAppMessaging-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2BB7D10F2E65B7B90060B6CC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseInAppMessaging-Beta";
+		};
+		2BB7D1222E65BF3E0060B6CC /* FirebaseInstallations */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2BB7D10F2E65B7B90060B6CC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseInstallations;
+		};
+		2BB7D1242E65BF3E0060B6CC /* FirebaseMLModelDownloader */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2BB7D10F2E65B7B90060B6CC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMLModelDownloader;
+		};
+		2BB7D1262E65BF3E0060B6CC /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2BB7D10F2E65B7B90060B6CC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+		2BB7D1282E65BF7A0060B6CC /* FirebaseAppDistribution-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2BB7D10F2E65B7B90060B6CC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseAppDistribution-Beta";
+		};
+		2BB7D12A2E65BF7A0060B6CC /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2BB7D10F2E65B7B90060B6CC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		2BB7D12C2E65BF7A0060B6CC /* FirebaseAuthCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2BB7D10F2E65B7B90060B6CC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseAuthCombine-Community";
+		};
+		2BB7D12E2E65BF7A0060B6CC /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2BB7D10F2E65B7B90060B6CC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		2BB7D1302E65BF7A0060B6CC /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2BB7D10F2E65B7B90060B6CC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+		2BB7D1322E65BF7A0060B6CC /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2BB7D10F2E65B7B90060B6CC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		2BB7D1342E65BF7A0060B6CC /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2BB7D10F2E65B7B90060B6CC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		2BB7D1362E65BF7A0060B6CC /* FirebaseFirestoreCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2BB7D10F2E65B7B90060B6CC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFirestoreCombine-Community";
+		};
+		2BB7D1382E65BF7A0060B6CC /* FirebaseFunctions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2BB7D10F2E65B7B90060B6CC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFunctions;
+		};
+		2BB7D13A2E65BF7A0060B6CC /* FirebaseFunctionsCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2BB7D10F2E65B7B90060B6CC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFunctionsCombine-Community";
+		};
+		2BB7D13C2E65BF7A0060B6CC /* FirebasePerformance */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2BB7D10F2E65B7B90060B6CC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebasePerformance;
+		};
+		2BB7D13E2E65BF7A0060B6CC /* FirebaseRemoteConfig */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2BB7D10F2E65B7B90060B6CC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseRemoteConfig;
+		};
+		2BB7D1402E65BF7A0060B6CC /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2BB7D10F2E65B7B90060B6CC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		2BB7D1422E65BF7A0060B6CC /* FirebaseStorageCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2BB7D10F2E65B7B90060B6CC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseStorageCombine-Community";
+		};
+		2BF3011E2E6DBAD3000517C6 /* CocoaMQTT */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2BF3011D2E6DBAD3000517C6 /* XCRemoteSwiftPackageReference "CocoaMQTT" */;
+			productName = CocoaMQTT;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 2BB7D0AC2E6584C00060B6CC /* Project object */;
+}
