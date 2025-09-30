@@ -205,7 +205,8 @@ cd code/HearoIOS
 #### 6.1. 프로젝트 소개 자료
 > PPT 등
 #### 6.2. 시연 영상
-> 영상 링크 또는 주요 장면 설명
+
+[![Watch the video](https://img.youtube.com/vi/bWdz_H-KRW0/maxresdefault.jpg)](https://youtu.be/bWdz_H-KRW0)
 
 ### 7. 팀 구성
 #### 7.1. 팀원별 소개 및 역할 분담
