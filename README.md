@@ -250,7 +250,7 @@ pip install pyaudio librosa soundfile scipy numpy
 pip install transformers 
 ```
 #### 4. 하드웨어 설정
-### USB 권한 설정
+##### USB 권한 설정
 ```bash
 # 사용자를 audio 및 plugdev 그룹에 추가
 sudo usermod -a -G audio,plugdev $USER
