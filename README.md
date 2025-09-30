@@ -193,17 +193,44 @@
 ### 5. 설치 및 실행 방법
 >
 #### 5.1. 설치절차 및 실행 방법
-> 설치 명령어 및 준비 사항, 실행 명령어, 포트 정보 등
 ### 5.1.1. 애플리케이션
 ```
 cd code/HearoIOS
 ```
 1. 해당 폴더를 xcode로 열고 빌드
 2. ios 에뮬레이터 혹은 실기기를 노트북에 직접 연결해 앱 다운로드
+ 
+### 5.2.2. 백엔드
+#### 1. 프로젝트 클론
+
+```bash
+git clone https://github.com/pnucse-capstone2025/Capstone-2025-team-29/AiChaserBE.git
+cd AiChaserBE
+```
+
+#### 2. python 가상환경 생성
+```
+python -m venv .venv            
+source .venv/Scripts/activate   
+    
+pip install --upgrade pip
+pip install -r requirements.txt
+```
+#### 3. Docker 기반 실행 
+- 가장 우선적으로, 도커가 설치되어 있어야 한다.
+- .env파일 생성 필요! 현재 gitignore로 .env 숨겨놨기에, 해당 파일 내 필요한 코드는 연락주시면 따로 보내드리겠습니다.
+```bash
+docker-compose up --build
+```
+- FastAPI: http://localhost:8000
+- MySQL 컨테이너: 내부 포트 db:3306
+- 로컬에서 API 문서 테스트 - Swagger UI: http://localhost:8000/docs
 
 ### 6. 소개 자료 및 시연 영상
 #### 6.1. 프로젝트 소개 자료
-> PPT 등
+
+[프로젝트 소개 자료](./docs/03.발표자료/발표자료.pdf)
+
 #### 6.2. 시연 영상
 
 [![Watch the video](https://img.youtube.com/vi/bWdz_H-KRW0/maxresdefault.jpg)](https://youtu.be/bWdz_H-KRW0)
